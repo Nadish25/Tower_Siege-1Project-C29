@@ -31,51 +31,51 @@ function setup() {
     //Create the Bodies Here
     ground=new Ground(600,570,1200,20);
 
-    stand1=new Ground(390,350,200,10);
-    stand2=new Ground(845,450,200,10);
+    stand1=new Ground(990,250,200,10);
+    stand2=new Ground(745,450,200,10);
     
     //Tower1
-    box1=new BoxYellow(330,325,30,40);
-    box2=new BoxYellow(360,325,30,40);
-    box3=new BoxYellow(390,325,30,40);
-    box4=new BoxYellow(420,325,30,40);
-    box5=new BoxYellow(450,325,30,40);
+    box1=new BoxYellow(930,225,30,40);
+    box2=new BoxYellow(960,225,30,40);
+    box3=new BoxYellow(990,225,30,40);
+    box4=new BoxYellow(1020,225,30,40);
+    box5=new BoxYellow(1050,225,30,40);
     
-    box6=new BoxOrange(345,285,30,40);
-    box7=new BoxOrange(375,285,30,40);
-    box8=new BoxOrange(405,285,30,40);
-    box9=new BoxOrange(435,285,30,40);
+    box6=new BoxOrange(945,185,30,40);
+    box7=new BoxOrange(975,185,30,40);
+    box8=new BoxOrange(1005,185,30,40);
+    box9=new BoxOrange(1035,185,30,40);
 
-    box10=new BoxRed(360,245,30,40);
-    box11=new BoxRed(390,245,30,40);
-    box12=new BoxRed(420,245,30,40);
+    box10=new BoxRed(960,145,30,40);
+    box11=new BoxRed(990,145,30,40);
+    box12=new BoxRed(1020,145,30,40);
 
-    box13=new BoxBlue(375,205,30,40);
-    box14=new BoxBlue(405,205,30,40);
+    box13=new BoxBlue(975,105,30,40);
+    box14=new BoxBlue(1005,105,30,40);
 
-    box15=new BoxBlue(390,165,30,40);
+    box15=new BoxBlue(990,65,30,40);
    
     //Tower2
-    box16=new BoxBlue(770,425,30,40);
-    box17=new BoxBlue(800,425,30,40);
-    box18=new BoxBlue(830,425,30,40);
-    box19=new BoxBlue(860,425,30,40);
-    box20=new BoxBlue(890,425,30,40);
-    box21=new BoxBlue(920,425,30,40);
+    box16=new BoxBlue(670,425,30,40);
+    box17=new BoxBlue(700,425,30,40);
+    box18=new BoxBlue(730,425,30,40);
+    box19=new BoxBlue(760,425,30,40);
+    box20=new BoxBlue(790,425,30,40);
+    box21=new BoxBlue(820,425,30,40);
 
-    box22=new BoxOrange(800,385,30,40);
-    box23=new BoxOrange(830,385,30,40);
-    box24=new BoxOrange(860,385,30,40);
-    box25=new BoxOrange(890,385,30,40);
+    box22=new BoxOrange(700,385,30,40);
+    box23=new BoxOrange(730,385,30,40);
+    box24=new BoxOrange(760,385,30,40);
+    box25=new BoxOrange(790,385,30,40);
 
-    box26=new BoxRed(830,345,30,40); 
-    box27=new BoxRed(860,345,30,40);   
+    box26=new BoxRed(730,345,30,40); 
+    box27=new BoxRed(760,345,30,40);   
 
-    box28=new BoxYellow(845,305,30,40);
+    box28=new BoxYellow(745,305,30,40);
    
-    polygon=new Polygon(100,200,50);
+    polygon=new Polygon(200,300,50);
 
-    sling=new SlingShot(polygon.body,{x:100,y:200});
+    sling=new SlingShot(polygon.body,{x:200,y:300});
 
     
 
@@ -133,7 +133,7 @@ function draw() {
   polygon.display();
   sling.display();
 
-  if(tries>20){
+  if(tries>10){
     fill("red")
     textSize(20)
     text("No need to hit the blocks,You Lost!!",500,300);
